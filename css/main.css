@@ -1,0 +1,224 @@
+html, body {
+    padding:0;
+    margin:0 auto;
+    font-family:"Lucida Grande",Verdana,Arial,"Bitstream Vera Sans",sans-serif;
+    font-size:12px;
+}
+p {
+    margin: 0;
+}
+.legend{
+    position: fixed;
+    left:10px;
+    bottom: 10px;
+    margin: 20px;
+    border: 1px solid #bbb;
+    width: 50%;
+    border-radius: 15px;
+    padding: 0 10px 10px;
+    background: #f8f8f8;
+    opacity: 0.5;
+}
+.legend:hover{
+    opacity: 1;
+}
+.legend p {
+    margin: 5px 0;
+}
+.legend pre {
+    font-weight: bold;
+    color:darkorchid;
+}
+.legend ul {
+    margin: 5px 15px;
+}
+#ChatFriendsContainer {
+    position: fixed;
+    bottom: -1px;
+    right: 20px;
+    width: 200px;
+    border: 1px solid #ccc;
+    z-index: 10;
+    background: #fff;
+    border-radius: 5px 5px 0 0;
+}
+#ChatFriendsContainer h3{
+    border-radius: 5px 5px 0 0;
+    background: steelblue;
+    color:#fff;
+    font-size: 12px;
+    margin: 0;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+.usersOnline {
+    float:right;
+    font-size: 10px;
+    color:#e3e3e3;
+}
+.WrappelistFriends {
+    overflow-x: auto;
+    height: 300px;    
+}
+.listFriends {    
+    list-style-type: none;
+    padding:0;
+    margin:0;
+    font-size: 12px;
+}
+.listFriends li {
+    padding: 5px 10px;
+    border-top: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+}
+.listFriends li:hover{
+    background: #e6e6e6;
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    cursor: pointer;
+}
+.listFriends li img {
+    vertical-align: middle;
+    margin-right: 5px;
+}
+.listFriends li i {
+    display: inline-block;
+    border-radius: 2px;
+    height:5px;
+    width:5px;
+    text-align: right;
+    float: right;
+    margin: 13px 0;
+}
+.listFriends li.status-0 img {
+    opacity: 0.5;
+}
+.listFriends li.status-1 i {
+    background: green;
+}
+.listFriends li.status-0 i {
+    background: lightgray;
+}
+
+/*******************************************************/
+
+.chatbox {
+    width: 225px;
+    box-shadow: 5px 5px 10px #e2e2e2;
+    position: absolute !important;
+    top : 10px;
+    left : 10px;
+
+}
+
+.chatboxhead {
+    background-color: steelblue;
+    padding:7px;
+    color: #ffffff;
+    border-radius: 5px 5px 0 0;
+    border-right:1px solid steelblue;
+    border-left:1px solid steelblue;
+}
+
+.chatboxblink {
+    background-color: #176689;
+    border-right:1px solid #176689;
+    border-left:1px solid #176689;
+}
+
+.chatboxcontent {
+    font-family: arial,sans-serif;
+    font-size:12px;
+    color: #333333;
+    min-height:200px;
+    min-width:209px;
+    width:auto;
+    overflow-y:auto;
+    overflow-x:auto;
+    padding:7px;
+    border-left:1px solid #cccccc;
+    border-right:1px solid #cccccc;
+    border-bottom:1px solid #eeeeee;
+    background-color: #ffffff;
+    line-height: 1.3em;
+}
+
+.chatboxcontent .timeStamp {
+    float: right;
+    color:#e2e2e2;
+    font-size: 10px;
+}
+
+.chatboxinput {
+    max-height: 67px !important;
+    padding: 5px;
+    background-color: #ffffff;
+    border-left:1px solid #cccccc;
+    border-right:1px solid #cccccc;
+    border-bottom:1px solid #cccccc;
+}
+
+.chatboxtextarea {
+    min-width: 206px;
+    width:auto;
+    height:44px !important;
+    padding:3px 0 3px 3px;
+    border: 1px solid #eeeeee;
+    margin: 1px;
+    overflow:hidden;
+}
+
+.chatboxtextareaselected {
+    border: 2px solid #f99d39;
+    margin:0;
+}
+
+.chatboxmessage {
+    margin-left: 1em;
+    margin-bottom: 0.5em;
+}
+
+.chatboxinfo {
+    margin-left:-1em;
+    color:#666666;
+
+}
+
+.chatboxmessagefrom {
+    margin-left:-1em;
+    font-weight: bold;
+}
+
+.chatboxmessagecontent {
+    margin-left: -1em;
+}
+
+.chatboxoptions {
+    float: right;
+}
+
+.chatboxoptions a {
+    text-decoration: none;
+    color: white;
+    font-weight:bold;
+    font-family:Verdana,Arial,"Bitstream Vera Sans",sans-serif;
+}
+
+.chatboxtitle {
+    float: left;
+}
+
+/* CSS Clearfix */
+.clearfix:after {
+    content: ".";
+    display: block;
+    clear: both;
+    visibility: hidden;
+    line-height: 0;
+    height: 0;
+}
+.clearfix {
+    display: block;
+}
+html[xmlns] .clearfix {display: block;}
+* html .clearfix {height: 1%;}

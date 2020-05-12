@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Bioware Chat - Kamel Hemdane</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script type="text/javascript" src="js/libs/jquery-1.11.1.min.js"></script>
+        <script type="text/javascript" src="js/libs/jquery-ui.min.js"></script>
+        <script type="text/javascript" src="js/data/data.js"></script>
+        <script type="text/javascript" src="js/chat.js"></script>
+        <link type="text/css" rel="stylesheet" href="css/main.css" />
+        <link type="text/css" rel="stylesheet" href="css/jquery-ui.css" />
+    </head>
+    <body>
+        <div class="legend">
+            <h3>Notice</h3>
+            <p>- Click on the friend to open a chat window.</p>
+            <p>- Open your favorite debug toolbar, and run these functions :</p>
+            <pre>Chatoo.addFriends(user, urlAvatar)</pre>
+            <ul>
+                <li>
+                    <b>User</b> : the friend name that you want to add to your list.
+                </li>
+                <li>
+                    <b>urlAvatar</b> : url of the avatar icon (This param is Optional).
+                </li>
+            </ul>
+            <p>
+                ex : <span style="color: deeppink">Chatoo</span>.<span style="color: #f99d39">addFriends</span>("John Doe");
+            </p>
+            <pre>Chatoo.updateStatus(user, newStatus)</pre>
+            <ul>
+                <li>
+                    <b>User</b> : the user that you want to update his status
+                </li>
+                <li>
+                    <b>newStatus</b> : two values must be choose : 1 = online/ 0 = offline
+                </li>
+            </ul>
+            <p>
+                ex : <span style="color: deeppink">Chatoo</span>.<span style="color: #f99d39">updateStatus</span>("John Doe", 1);
+            </p>
+        </div>
+        <div id="ChatFriendsContainer">
+            <h3>Friends <span class="usersOnline"></span></h3>
+            <div class="WrappelistFriends">
+                <ul class="listFriends">
+                </ul>
+            </div>
+        </div>
+    </body>
+</html>
