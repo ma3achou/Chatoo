@@ -8,7 +8,7 @@
 Chatoo small JavaScript to have a chat messenger like.
 
 ## Maintainers
-- Kamel HEMDANE
+- Kamel HEMDANE (Boom)
 
 ## Acknowledgments
 
